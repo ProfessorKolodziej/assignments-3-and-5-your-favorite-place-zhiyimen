@@ -1,9 +1,9 @@
 /* Prompt: <ol> <li></li> </ol> How to put the number from li to a square box in a different place?" Source:Claude
+Background by number:https://www.w3schools.com/cssref/sel_nth-child.php
 Text shadow: https://www.shecodes.io/athena/22835-how-to-add-a-shadow-to-text-with-css#:~:text=To%20add%20a%20shadow%20to%20text%2C%20you%20can,the%20CSS%20text%2Dshadow%20property.&text=The%20text%2Dshadow%20property%20takes,the%20shadow%20to%20the%20left. */
 
 body {
 	margin: 0;
-	padding: 0;
 	font-family: "Lora", serif;
 	font-weight: 300;
 }
@@ -11,23 +11,18 @@ body {
 .picturediv {
 	margin: 1rem;
 	position: relative;
-	height: 250px;
-	/* Set the desired height for the images */
+	height: 150px;
 	overflow: hidden;
-	/* Add this line */
 }
 
 .picture {
 	width: 100%;
 	height: 100%;
-	/* Add this line */
 	object-fit: cover;
-	/* Add this line */
 }
 
 .header {
-
-	color: #FFFFFF;
+	color: #ffffff;
 	font-size: 1.4rem;
 	font-weight: 600;
 	text-align: center;
@@ -53,8 +48,6 @@ body {
 	font-weight: 400;
 	color: #954535;
 	font-size: 1.6rem;
-
-
 }
 
 .descript {
@@ -66,7 +59,7 @@ body {
 	text-decoration-line: none;
 }
 
-ol {
+.placesbox {
 	list-style: none;
 	/* Remove the default numbering */
 	counter-reset: item;
@@ -74,7 +67,7 @@ ol {
 	padding: 0;
 }
 
-li.section {
+.places {
 	position: relative;
 	counter-increment: item;
 	/* Increment the counter */
@@ -83,14 +76,14 @@ li.section {
 	padding-right: 2rem;
 }
 
-li.section:nth-child(odd) {
-	background-color: #FFF8e7;
+.places:nth-child(odd) {
+	background-color: #fff8e7;
 }
 
-li.section:before {
+.places:before {
 	position: absolute;
-	right: 15%;
-	top: 250px;
+	right: 20%;
+	top: 130px;
 	z-index: 1;
 	content: counter(item)".";
 	/* Display the counter value */
@@ -110,14 +103,14 @@ li.section:before {
 
 .tips {
 	font-size: 1.2rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding: 2rem;
+	background-color: #fff8e7;
 }
 
 .additional {
 	font-size: 1.2rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding: 2rem;
+	background-color: #fff8e7;
 }
 
 .additionsection {
@@ -140,14 +133,104 @@ li.section:before {
 
 }
 
-@media screen and (width >=320px) {
-	#some-id {
-		color: red;
-	}
+.source {
+	margin-left: 2rem;
 }
 
-@media screen and (width >=500px) {
-	#some-id {
-		color: red;
+@media screen and (width >=768px) {
+	.placesbox {
+		background-color: #fff8e7;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.places {
+		width: 50%;
+		box-sizing: border-box;
+	}
+
+	.places:before {
+		right: 15%;
+		top: 230px;
+	}
+
+	.picturediv {
+		height: 250px;
+	}
+
+	.tips {
+		background-color: #fefefe;
+	}
+
+	.additional {
+		background-color: #fefefe;
+	}
+
+	.infobox {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.tipsbox {
+		width: 50%;
+		box-sizing: border-box;
+	}
+
+	.historybox {
+		width: 50%;
+		box-sizing: border-box;
+		margin-top: 10rem;
+	}
+
+}
+
+@media screen and (width >=1024px) {
+	.title {
+		padding: 100px 0;
+	}
+
+	.places:before {
+		right: 15%;
+		top: 340px;
+	}
+
+	.picturediv {
+		height: 350px;
+	}
+
+	.placesbox {
+		background-color: #fefefe;
+	}
+
+	.places:nth-child(1),
+	.places:nth-child(2),
+	.places:nth-child(5) {
+		background-color: #fefefe;
+	}
+
+	.places:nth-child(3),
+	.places:nth-child(4) {
+		background-color: #fff8e7;
+	}
+
+	.tipsbox {
+		width: 100%;
+		box-sizing: none;
+		padding-left: 5rem;
+		padding-right: 5rem;
+		background-color: #fff8e7;
+	}
+
+	.tips {
+		background-color: #fff8e7;
+	}
+
+	.historybox {
+		width: 100%;
+		box-sizing: none;
+		padding-left: 5rem;
+		padding-right: 5rem;
+		margin-top: 0;
 	}
 }
