@@ -7,6 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Description here" />
 	<title>Your Favorite Place</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+		rel="stylesheet">
 	<!-- 
 		You can connect the CSS to the HTML here, 
 		inside the head tag. Here is an example:
@@ -19,102 +24,163 @@
 </head>
 
 <body>
-	<h1>Beacon Hill</h1>
-	<p>
-		<a
+	<div class="header">
+		<h1 class="title">Beacon Hill</h1>
+	</div>
+	<p class="intro">
+		<a class="link"
 			href="https://www.google.com/maps/place/Beacon+Hill,+Boston,+MA/@42.3566242,-71.0688356,16z/data=!3m1!4b1!4m6!3m5!1s0x89e3709e822ace4f:0xad0e41814f41c4d8!8m2!3d42.3561948!4d-71.06939!16zL20vMDQ0cV9x?entry=ttu">Beacon
-			Hill,</a>
+			Hill</a>,
 		in Boston, is a historic neighborhood known for its charming cobblestone streets, red-brick
 		houses, and iconic landmarks like the golden-domed Massachusetts State House. With a mix of 18th-century
 		charm and modern amenities, it offers a unique and picturesque living experience. The neighborhood's central
 		location and vibrant atmosphere make it a delightful place to explore.
 	</p>
-	<ol>
-		<li>
-			<h2>Acorn Street</h2>
-			Built in 1795, it is famous for its steep, narrow streets lined with classically American
-			Federal–style (and a few Victorian) row houses. Acorn Street is one of the most photographed in the whole
-			city—perhaps
-			because it's a stylish rendition of Colonial Boston.
+	<section>
+		<ol>
+			<li class="section">
+				<div class="picturediv">
+					<img class="picture" src="images/acorn-street.jpeg">
+				</div>
+				<h2 class="place">
+					Acorn Street
+				</h2>
+				<p class="descript">
+					Built in 1795, it is famous for its steep, narrow streets lined with classically American
+					Federal–style (and a few Victorian) row houses. Acorn Street is one of the most photographed in the
+					whole
+					city—perhaps because it's a stylish rendition of Colonial Boston.
+				</p>
+			</li>
+
+			<li class="section">
+				<div class="picturediv">
+					<img class="picture" src="images/beacon-hill-cafe.jpg">
+				</div>
+				<h2 class="place">
+					Beacon Hill Books and Cafe
+				</h2>
+				<p class="descript">
+					Words from the cafe: Beacon Hill Books and Cafe is Boston’s newest hangout around the corner, where
+					a
+					lovingly curated selection of reads meets a warm atmosphere, pop-ups, literary events, and a
+					full-range menu of
+					locallysourced fare.
+				</p>
+			</li>
+
+			<li class="section">
+				<div class="picturediv">
+					<img class="picture" src="images/Rouvalis.jpeg">
+				</div>
+				<h2 class="place">
+					Rouvalis Flowers
+				</h2>
+				<p class="descript">
+					Rouvalis Flowers note to their customers: Here at Rouvalis Flowers and Gardens, we have proudly been
+					serving
+					the greater Boston area for over 40 years. Family-owned and operated, we are located in the
+					historical and affluent neighborhood of Beacon
+					Hill. Rouvalis is known for our long-lasting and time-honored relationships with our customers.
+					Enjoying
+					the unique fabric of our 'small town' Boston, we welcome new clients to the Rouvalis family daily.
+				</p>
+			</li>
+
+			<li class="section">
+				<div class="picturediv">
+					<img class="picture" src="images/elegant.jpeg">
+				</div>
+				<h2 class="place">
+					Elegant Antique Findings
+				</h2>
+				<p class="descript">
+					Elegant Findings Antiques is known worldwide as a favorite Boston antique store that has an
+					extensive
+					selection of antique porcelain and stemware, as well as rare antiques, furniture, linens, and
+					silver. Our goal is to provide a shopping place where you can find those one-of-a-kind rare antiques
+					that
+					you have been looking for, but couldn’t find anywhere else.
+				</p>
+			</li>
+
+			<li class="section">
+				<div class="picturediv">
+					<img class="picture" src="images/blank street coffee.jpeg">
+				</div>
+				<h2 class="place">
+					Blank Street Coffee
+				</h2>
+				<p class="descript">
+				Blank Street Coffee started in 2020 with a vision to redefine the coffee shop experience, focusing on
+				clean, natural, and high-quality offerings at affordable prices. Beginning with a small coffee cart in
+				Brooklyn, they prioritized removing unnecessary costs to invest in top-notch specialty coffees, locally
+				sourced food, and fair wages for baristas. Their dedication to perfecting every detail in the customer
+				experience has led to expansion across multiple cities, providing an elevated ritual for coffee lovers
+				worldwide.
+			</p>
+			</li>
+		</ol>
+	</section>
+
+	<h3 class="tipsheader">
+		Tips for visiting Beacon Hill
+	</h3>
+
+	<ul class="tips">
+		<li>Wander the Streets: Beacon Hill's narrow, winding streets are a delight to explore. Don't be afraid
+			to get lost—it's all part of the experience.
 		</li>
 
-		<li>
-			<h2>Beacon Hill Books and Cafe</h2>
-			Words from the cafe: Beacon Hill Books and Cafe is Boston’s newest hangout around the corner, where a
-			lovingly
-			curated selection of reads meets a warm atmosphere, pop-ups, literary events, and a full-range menu of
-			locally
-			sourced fare.
-		</li>
-		<li>
-			<h2>Rouvalis Flowers</h2>
-			Rouvalis Flowers note to their customers: Here at Rouvalis Flowers and Gardens, we have proudly been serving
-			the greater Boston area for over 40
-			years. Family-owned and operated, we are located in the historical and affluent neighborhood of Beacon
-			Hill. Rouvalis is known for our long-lasting and time-honored relationships with our customers. Enjoying
-			the unique fabric of our 'small town' Boston, we welcome new clients to the Rouvalis family daily.
-		</li>
-		<li>
-			<h2>Elegant Antique Findings</h2>
-			Elegant Findings Antiques is known worldwide as a favorite Boston antique store that has an extensive
-			selection of antique porcelain and stemware, as well as rare antiques, furniture, linens, and
-			silver. Our goal is to provide a shopping place where you can find those one-of-a-kind rare antiques that
-			you have been looking for, but couldn’t find anywhere else.
-		</li>
-		<li>
-			<h2>Blank Street Coffee</h2>
-			Blank Street Coffee started in 2020 with a vision to redefine the coffee shop experience, focusing on
-			clean, natural, and high-quality offerings at affordable prices. Beginning with a small coffee cart in
-			Brooklyn, they prioritized removing unnecessary costs to invest in top-notch specialty coffees, locally
-			sourced food, and fair wages for baristas. Their dedication to perfecting every detail in the customer
-			experience has led to expansion across multiple cities, providing an elevated ritual for coffee lovers
-			worldwide.
-		</li>
-	</ol>
-	<h3>Tips for visiting Beacon Hill</h3>
-	<ul>
-		<li>Wander the Streets: Beacon Hill's narrow, winding streets are a delight to explore. Don't be afraid
-			to
-			get
-			lost—it's all part of the experience.</li>
 		<li>Acorn Street Photo Op: Make sure to snap a picture on Acorn Street, one of the most photographed
-			streets
-			in
-			the country. The cobblestone and historic brick make for a picturesque scene.
+			streets in the country. The cobblestone and historic brick make for a picturesque scene.
 		</li>
+
 		<li>When strolling through Beacon Hill's cobblestone streets lined with row houses, it's wise to keep
-			noise
-			to a
-			minimum. The residents will appreciate a quiet atmosphere (a tip from a photographer).</li>
+			noise to a minimum. The residents will appreciate a quiet atmosphere (a tip from a photographer).
+		</li>
+
 		<li>Explore Charles Street: This charming street is lined with boutiques, antique shops, and cozy cafes.
-			Perfect
-			for a leisurely afternoon of shopping.
+			Perfect for a leisurely afternoon of shopping.
 		</li>
+
 		<li>Take a Historical Tour: Beacon Hill is rich in history. Consider taking a guided walking tour to
-			learn
-			more
-			about the neighborhood's fascinating past.
+			learn more about the neighborhood's fascinating past.
 		</li>
+
 	</ul>
-	<h3>Beacon Hill: A historic district</h3>
-	<h4>History</h4>
-	<p>According to Boston City Hall, Beacon Hill got its name from a beacon that at one point sat up on the
-		hill to warn people about foreign invasion. Development began on the hill in 1795 with the construction of the
-		State House, and then residential development subsequently followed. In 1795, the Mount Vernon Proprietors,
-		made up of six wealthy citizens, was created. The organization is considered to be one of the first land
-		development operations in the country. Charles Bulfinch completed the State House in 1797, and major residential
-		development began in 1800.</p>
-	<h4>Architectural Style</h4>
-	<p>Three types of structures characterize Beacon Hill’s early period: Freestanding mansion (These homes,
-		though there were not too many of them built, had large plots of land surrounding a large public square.) Pairs
-		of houses symmetrical in design. Row house: multiple attached houses with the same design. These three
-		types are built mostly in the Federal and Greek Revival Style.
-	</p>
-	<p>
-		<a
-			href="https://www.boston.com/real-estate/real-estate-news/2015/01/29/beacon-hill-the-oldest-historic-district-in-boston/">Source:
-			Boston.com</a>
-	</p>
+
+	<h3 class="additionsection">
+		Beacon Hill: A historic district
+	</h3>
+	<section class="additional">
+		<h4 class="history">
+			History
+		</h4>
+		<p>
+			According to Boston City Hall, Beacon Hill got its name from a beacon that at one point sat up on the
+			hill to warn people about foreign invasion. Development began on the hill in 1795 with the construction of
+			the State House, and then residential development subsequently followed. In 1795, the Mount Vernon Proprietors,
+			made up of six wealthy citizens, was created. The organization is considered to be one of the first land
+			development operations in the country. Charles Bulfinch completed the State House in 1797, and major
+			residential development began in 1800.
+		</p>
+		<h4 class="architecture">
+			Architectural Style
+		</h4>
+		<p>
+			Three types of structures characterize Beacon Hill’s early period: Freestanding mansion (These homes,
+			though there were not too many of them built, had large plots of land surrounding a large public square.)
+			Pairs of houses symmetrical in design. Row house: multiple attached houses with the same design. These three
+			types are built mostly in the Federal and Greek Revival Style.
+		</p>
+		<p>
+			<a
+				href="https://www.boston.com/real-estate/real-estate-news/2015/01/29/beacon-hill-the-oldest-historic-district-in-boston/">Source:
+				Boston.com
+			</a>
+		</p>
+	</section>
 
 </body>
 
